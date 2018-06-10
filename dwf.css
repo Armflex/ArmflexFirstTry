@@ -1,0 +1,202 @@
+body{
+    background-image: Новая папка (4)(images/1.jpg);
+}
+a {
+	color: black;		/* цвет шрифта */
+	font-size: 24px;	/* размер шрифта в рамке */
+	
+}
+div{
+	color:#B34EE9;		/* цвет шрифта */
+	font-size: 24px; 	/* размер шрифта в рамке */
+}
+#y{
+	color:#D0FF00 ;		/* цвет шрифта */
+	font-size: 24px; 	/* размер шрифта в рамке */
+}
+#a{
+	color: #AA47BC;		/* цвет шрифта */
+	font-size: 16px;	/* размер шрифта в рамке */
+}
+#b{
+	color: lime;		/* цвет шрифта */
+	font-size: 30px;	/* размер шрифта в рамке */
+}
+.human{
+	color: #FBD263; 	/* цвет шрифта */
+}
+.animal{
+	color: red; 		/* цвет шрифта */
+}
+.lion{
+	color: red;			/* цвет шрифта */
+}
+.fish{
+	color: #5CD7FF; 	/* цвет шрифта */
+}
+.message{
+	color:#ffffff;				 /* цвет шрифта */
+	background-color: #00A400;	 /* цвет фона рамки*/
+	border: 3px solid black;	 /* параметры рамки */
+	margin-top: 15px;   		 /* параметр отступа обьектов "здесь отступ сверхa" */
+	padding:10px;   			 /* параметр отступа в нутри рамок */
+	font-size:16px;     		 /* размер шрифта в рамке */
+}
+.dashed{
+	color:e014d6;				 /* цвет шрифта */
+	background-color:blue;		 /* цвет фона рамки*/
+	border: 3px dashed black; 	 /* параметры рамки */
+	
+	
+}
+.success{
+	color:#ffffff;				 /* цвет шрифта */
+	background-color:green;		 /* цвет фона рамки */
+	border: 5px dashed black;	 /* параметры рамки */
+	
+	
+}
+.fail{
+	color:#ffffff;				 /* цвет шрифта */
+	background-color: red;		 /* цвет фона рамки */
+	border: 5px solid black;	 /* параметры рамки */
+	
+}
+.message:hover{
+	border:10px solid #36393E;	 /* параметры рамки */
+								/*:hover выполняется когда навидим на обьект */
+}								
+.fail:hover{
+	border:8px dashed #D0FF00;  /* параметры рамки */
+								/*:hover выполняется когда навидим на обьект */
+}
+#test{
+	transform: rotate(0deg) scale(1.0);			/* параметр преобразования(анимации) rotate поворота обьектов "на 0градусов"    scale увелечение\уменьшение обьектов */
+		transition: 1s transform;				/* параметр анимации */
+	background-color:blue;
+	color:#939393;
+	padding:15px;						/* параметр отступа в нутри рамок */
+	margin:100px;						/* параметр отступа обьектов */
+	border: 7px solid red;				/* параметры рамки */
+	border-radius: 15px;				/* параметр для закругления рамки */
+	opacity:0.8;						/* параметры прозрачности блока */
+	box-shadow: -13px -13px 7px #939393; 	/* параметры тени "лево\право верх\низ прозрачность цвет" */
+	width: 100px;						/* параметры ширины обьекта (можно задавать в процентах) */
+	height:100px;						/* параметры высоты обьекта  */
+	display:block;						/* параметры вида обьекта  */
+	text-align: center;					/*параметр положения объекта */
+	font-size: 30px;					/*параметр размера обьекта в рамке */
+	font-weight: 800px					/*параметр жирности шрифта */
+	display:block; margin:0 auto;
+}
+#test:hover{
+	opacity:1;									/* параметры прозрачности блока */
+	transform: rotate(360deg) scale(5) ;		/* параметр преобразования(анимации) rotate поворота обьектов "на 0градусов"    scale увелечение\уменьшение обьектов */
+}
+.gf{
+	border-bottom: 1px solid green;
+	width:10%;
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#eye{
+
+	color: #2EEC31;
+	height:2%;
+	width:2%;
+	display:block; margin:0 auto;
+}
+#eye:hover{
+	opacity:0.0;	
+}
+#eye2 {
+  -webkit-animation: eye2 0.5s linear infinite;
+  animation: eye2 0.5s linear infinite;
+  font-size: 24px;
+  color:red;
+  
+}
+@-webkit-keyframes eye2 {
+  50% { color: rgb(34, 34, 34); }
+  51% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgba(34, 34, 34, 0); }
+}
+@keyframes eye2 {
+  50% { color: rgb(34, 34, 34); }
+  51% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgba(34, 34, 34, 0); }
+}
+#eye2:hover{
+	animation: none;
+	color:#ffffff;
+}
+#hatch{
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+ 
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+ 
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    font-size:30px;
+}
+@keyframes tossing {
+    0% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(-4deg);
+    }
+}
+@-webkit-keyframes tossing {
+    0% {
+        -webkit-transform: rotate(-4deg);
+    }
+    50% {
+        -webkit-transform: rotate(4deg);
+    }
+    100% {
+        -webkit-transform: rotate(-4deg);
+    }
+}
+#plus{
+	
+
+    animation-name: tossing1;
+    
+    animation-duration: 5s;
+	
+    animation-iteration-count: infinite;
+   
+    font-size:30px;
+	
+	border-radius: 10000px;
+	
+	
+	
+	
+}
+@keyframes tossing1 {
+  0% {
+	  
+        transform: rotate(360deg);
+  }
+  
+}
+#ramka1{
+	
+	width: 500px;
+
+}
+#ramka2{
+	
+	width: 500px;
+}
+
